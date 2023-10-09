@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mpet0019/fit3139/main/Top%20100%20Languages.csv"
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {"field": "Total Speakers", "type": "quantitative"},
+    "y": {"field": "Native Speakers", "type": "quantitative"},
+    "size": {"field": "Total Speakers", "type": "quantitative"},
+    "color": {"field": "Origin", "type": "nominal"},
+    "tooltip": [
+      {"field": "Language", "type": "nominal"},
+      {"field": "Total Speakers", "type": "quantitative"},
+      {"field": "Native Speakers", "type": "quantitative"},
+      {"field": "Origin", "type": "nominal"}
+    ]
+  },
+  "config": {}
+}
